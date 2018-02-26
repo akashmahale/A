@@ -1,0 +1,38 @@
+page-events {
+  ion-title {
+    position: absolute;
+    top: 8%;
+    left: 10%;  
+  }
+
+  
+h4{
+    text-transform: none;
+
+  }
+  .event {
+    position: relative;
+    top: 3%;
+  }
+  h3 {
+    padding: 2px;
+    transform: translate(0%, 5%)
+  }
+  .month {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    margin: 0px;
+    top: 0.25%;
+    height: 27px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #121212;
+    color: #EDEDED;
+    padding: 0px 15px 0px 15px;
+  }
+}
+

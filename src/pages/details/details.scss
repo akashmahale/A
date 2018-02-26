@@ -1,0 +1,37 @@
+page-details {
+  .toolbar-background,
+    {
+    background-color: #7e57c2;
+  }
+  .header-md::after {
+    background-size: 100% 0px;
+  }
+  ion-title {
+    position: absolute;
+    top: 27.5%;
+    left: 25%;
+  }
+  .fabButton {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+  }
+  .tabs-md .tab-button {
+    color: #EFEFEF !important;
+  } //selected color
+  .tabs-md .tab-button[aria-selected=true] {
+    color: white !important;
+    font-weight: bold;
+  }
+  .tab-button {
+    color: white !important;
+    background-color: #7e57c2;
+  }
+  .close{
+    position: absolute;
+    top:5%;
+    left: 95%;
+  }
+}
+
+

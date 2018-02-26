@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar  hideBackButton >
+    <ion-buttons>
+      <button ion-button icon-only>
+        <ion-icon name="menu" outline></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>
+<h4>Month▼</h4>
+    </ion-title>
+    
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div class="event" *ngFor="let data of colorData">
+    <div class="month">
+      <h3>{{data.Mon}} 2018</h3>
+    </div>
+    <div>
+      <img class="hook" src="assets/Flowers.jpg">
+    </div>
+    <div>
+      <div>
+        <p *ngFor="let data of colorData">
+          {{data.Mon}}
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

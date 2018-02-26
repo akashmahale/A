@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar hideBackButton padding>
+        <h4 style="color:white"><br><br>Mrs. Audrey's Wedding Anniversary</h4>
+        <ion-buttons class="close">
+            <ion-icon name="close" outline style="color:white"></ion-icon>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-tabs tabsPlacement="top">
+        <ion-tab [root]="tab1Root" tabTitle="EVENT"></ion-tab>
+        <ion-tab [root]="tab2Root" tabTitle="ORDER"></ion-tab>
+        <ion-tab [root]="tab3Root" tabTitle="MORE"></ion-tab>
+    </ion-tabs>
+
+</ion-content>

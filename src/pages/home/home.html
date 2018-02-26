@@ -1,14 +1,60 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-buttons>
+      <button ion-button icon-only>
+        <ion-icon name="menu" outline></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-item no-lines>
+    <h2>
+      <b>Upcoming events</b>
+    </h2>
+    <button ion-button outline item-right color="dark" (click)="viewEventsPage()">VIEW ALL</button>
+  </ion-item>
+
+  <ion-slides slidesPerView="3">
+    <ion-slide>
+      <div class="calendar" (click)="viewNewEventPage()">
+        <div class="calTop">
+          <img class="hook" src="assets/calendar.png">
+          <h5 class="month" style="color:white">MONTH</h5>
+        </div>
+        <div class="calBot">
+          <img class="hooks" src="assets/calendar.png">
+          <p class="date">+</p>
+          <p class="day" style="white-space: nowrap">Add New</p>
+          <p class="event"></p>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide *ngFor="let data of colorData">
+      <div class="calendar" (click)="viewDetailsPage()">
+        <div Class="calTop1" [ngStyle]="{background: data.Color}">
+          <img class="hook" src="assets/calendar.png">
+          <h5 class="month" style="color:white ">{{data.Mon}}</h5>
+        </div>
+        <div class="calBot">
+          <img class="hooks" src="assets/calendar.png">
+          <p class="date">23{{data.Dat}}</p>
+          <p class="day">{{day}}Wednesday</p>
+          <p class="event">Mrs. Audrey's Wedding Anniversary</p>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
 </ion-content>

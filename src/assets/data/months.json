@@ -1,0 +1,50 @@
+[
+    {
+        "Mon": "January",
+        "Color": "#F44336"
+    },
+    {
+        "Mon": "February",
+        "Color": "#E91E63"
+    },
+    {
+        "Mon": "March",
+        "Color": "#9C27B0"
+    },
+    {
+        "Mon": "April",
+        "Color": "#673AB7"
+    },
+    {
+        "Mon": "May",
+        "Color": "#3F51B5"
+    },
+    {
+        "Mon": "June",
+        "Color": "#2196F3"
+    },
+    {
+        "Mon": "July",
+        "Color": "#03A9F4"
+    },
+    {
+        "Mon": "August",
+        "Color": "#00BCD4"
+    },
+    {
+        "Mon": "September",
+        "Color": "#009688"
+    },
+    {
+        "Mon": "October",
+        "Color": "#4CAF50"
+    },
+    {
+        "Mon": "November",
+        "Color": "#8BC34A"
+    },
+    {
+        "Mon": "December",
+        "Color": "#CDDC39"
+    }
+]
